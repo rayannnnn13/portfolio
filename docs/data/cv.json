@@ -1,0 +1,99 @@
+{
+  "experiences": [
+    {
+      "title": "Stage d’observation en informatique",
+      "organization": "CPEM",
+      "period": "Octobre 2024 — janvier 2025",
+      "description": "Découverte des métiers de l’informatique au contact d’une équipe technique : observation des pratiques de développement et première approche de la gestion des systèmes informatiques."
+    },
+    {
+      "title": "Conception de mon portfolio",
+      "organization": "Projet pédagogique · C to TypeScript",
+      "period": "En cours",
+      "description": "Création d’un CV interactif inspiré du cinéma. Mise en pratique de HTML, CSS, TypeScript et Git, de la structure de la page aux interactions."
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "beginner",
+      "description": "Structurer une page avec des balises sémantiques."
+    },
+    {
+      "name": "CSS",
+      "level": "beginner",
+      "description": "Mettre en forme des interfaces adaptées aux différents écrans."
+    },
+    {
+      "name": "TypeScript",
+      "level": "beginner",
+      "description": "Typer les données et programmer les interactions du site."
+    },
+    {
+      "name": "C",
+      "level": "beginner",
+      "description": "Consolider mes bases en programmation."
+    },
+    {
+      "name": "Git",
+      "level": "beginner",
+      "description": "Suivre les modifications et organiser les versions du projet."
+    }
+  ],
+  "formations": [
+    {
+      "title": "Bachelor informatique",
+      "organization": "Epitech",
+      "period": "En cours",
+      "description": "Une formation en informatique que je mets en pratique à travers mes projets. Mon travail actuel : comprendre les bases du C, développer des interfaces web et structurer mon code en TypeScript."
+    },
+    {
+      "title": "Baccalauréat STMG",
+      "organization": "Lycée Marie Curie",
+      "period": "2020 — 2023",
+      "description": "Parcours secondaire présenté dans mon CV, avant mon orientation vers l’informatique et le développement."
+    },
+    {
+      "title": "Certification PIX",
+      "organization": "Compétences numériques",
+      "period": "2023",
+      "description": "Certification de compétences numériques obtenue en 2023."
+    }
+  ],
+  "projects": [
+    {
+      "id": "cv-numerique",
+      "title": "Mon CV, version cinéma",
+      "category": "Projet pédagogique · En évolution",
+      "description": "Un portfolio conçu comme un catalogue de films : sélection de profil, affiches cliquables, vidéo de fond et fiches projets. L’objectif : présenter mon parcours tout en apprenant à construire une interface accessible et responsive.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "TypeScript"
+      ],
+      "url": "https://github.com/rayannnnn13/portfolio",
+      "image": "assets/portfolio-preview.svg",
+      "achievements": [
+        "Structurer les rubriques et charger leur contenu depuis un fichier JSON.",
+        "Créer des interactions : profils, carrousels, fenêtre de détail et commandes vidéo.",
+        "Adapter la mise en page au mobile et prévoir la navigation au clavier."
+      ],
+      "challenge": "Gérer les données sans dupliquer les textes et permettre l’ouverture du CV avec ou sans serveur local.",
+      "learning": "J’ai appris à séparer la structure, les styles, les données et les interactions, puis à vérifier le typage avec le compilateur TypeScript."
+    }
+  ],
+  "upcoming": [
+    {
+      "title": "Faire évoluer ce portfolio",
+      "organization": "HTML · CSS · TypeScript",
+      "period": "En cours",
+      "description": "Améliorer la présentation des projets, la navigation et les détails de l’interface au fil de mes apprentissages."
+    },
+    {
+      "title": "Explorer les systèmes et les réseaux",
+      "organization": "Windows · Linux · Réseaux",
+      "period": "Piste à explorer",
+      "description": "Approfondir mes connaissances des systèmes d’exploitation et les relier à mon intérêt pour la cybersécurité."
+    }
+  ]
+}

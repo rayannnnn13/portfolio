@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="CV numérique de Rayan Ouakraf : parcours, compétences et projets."
+    >
+    <title>Rayan Ouakraf — CV numérique</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="dist/main.js"></script>
+<script id="cv-data" type="application/json">{"experiences":[{"title":"Stage d’observation en informatique","organization":"CPEM","period":"Octobre 2024 — janvier 2025","description":"Découverte des métiers de l’informatique au contact d’une équipe technique : observation des pratiques de développement et première approche de la gestion des systèmes informatiques."},{"title":"Conception de mon portfolio","organization":"Projet pédagogique · C to TypeScript","period":"En cours","description":"Création d’un CV interactif inspiré du cinéma. Mise en pratique de HTML, CSS, TypeScript et Git, de la structure de la page aux interactions."}],"skills":[{"name":"HTML","level":"beginner","description":"Structurer une page avec des balises sémantiques."},{"name":"CSS","level":"beginner","description":"Mettre en forme des interfaces adaptées aux différents écrans."},{"name":"TypeScript","level":"beginner","description":"Typer les données et programmer les interactions du site."},{"name":"C","level":"beginner","description":"Consolider mes bases en programmation."},{"name":"Git","level":"beginner","description":"Suivre les modifications et organiser les versions du projet."}],"formations":[{"title":"Bachelor informatique","organization":"Epitech","period":"En cours","description":"Une formation en informatique que je mets en pratique à travers mes projets. Mon travail actuel : comprendre les bases du C, développer des interfaces web et structurer mon code en TypeScript."},{"title":"Baccalauréat STMG","organization":"Lycée Marie Curie","period":"2020 — 2023","description":"Parcours secondaire présenté dans mon CV, avant mon orientation vers l’informatique et le développement."},{"title":"Certification PIX","organization":"Compétences numériques","period":"2023","description":"Certification de compétences numériques obtenue en 2023."}],"projects":[{"id":"cv-numerique","title":"Mon CV, version cinéma","category":"Projet pédagogique · En évolution","description":"Un portfolio conçu comme un catalogue de films : sélection de profil, affiches cliquables, vidéo de fond et fiches projets. L’objectif : présenter mon parcours tout en apprenant à construire une interface accessible et responsive.","technologies":["HTML","CSS","TypeScript"],"url":"https://github.com/rayannnnn13/portfolio","image":"assets/portfolio-preview.svg","achievements":["Structurer les rubriques et charger leur contenu depuis un fichier JSON.","Créer des interactions : profils, carrousels, fenêtre de détail et commandes vidéo.","Adapter la mise en page au mobile et prévoir la navigation au clavier."],"challenge":"Gérer les données sans dupliquer les textes et permettre l’ouverture du CV avec ou sans serveur local.","learning":"J’ai appris à séparer la structure, les styles, les données et les interactions, puis à vérifier le typage avec le compilateur TypeScript."}],"upcoming":[{"title":"Faire évoluer ce portfolio","organization":"HTML · CSS · TypeScript","period":"En cours","description":"Améliorer la présentation des projets, la navigation et les détails de l’interface au fil de mes apprentissages."},{"title":"Explorer les systèmes et les réseaux","organization":"Windows · Linux · Réseaux","period":"Piste à explorer","description":"Approfondir mes connaissances des systèmes d’exploitation et les relier à mon intérêt pour la cybersécurité."}]}</script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <section class="profile-screen" id="profile-screen"
+             aria-labelledby="profile-title">
+        <h1 id="profile-title">Qui regarde ?</h1>
+
+        <button class="profile-choice" id="open-profile" type="button">
+            <img src="portrait.jpg" alt="" width="150" height="150">
+            <span>Rayan</span>
+        </button>
+    </section>
+
+    <div class="site" id="site" hidden>
+        <header class="site-header">
+            <nav class="navigation" aria-label="Navigation principale">
+                <a class="logo" href="#accueil">RAYAN<span>.</span></a>
+
+                <div class="nav-links">
+                    <a href="#presentation">Présentation</a>
+                    <a href="#experiences">Expériences</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#formations">Formations</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="nav-profile" id="return-profile" type="button" aria-label="Revenir à la sélection du profil">
+                    <img src="portrait.jpg" alt="" width="40" height="40">
+                </button>
+            </nav>
+        </header>
+
+        <main id="main-content" tabindex="-1">
+            <section class="hero" id="accueil" aria-labelledby="hero-title">
+                <video id="hero-video" class="hero-video" muted loop playsinline
+                       preload="metadata" poster="hero-video-poster.jpg"
+                       aria-hidden="true" tabindex="-1">
+                    <source src="hero-video.mp4" type="video/mp4">
+                </video>
+
+                <div class="hero-content">
+                    <p class="hero-series"><span class="hero-monogram" aria-hidden="true">R</span> UN PARCOURS ORIGINAL</p>
+                    <h1 id="hero-title"><span>RAYAN</span><span>OUAKRAF<span class="hero-title-dot">.</span></span></h1>
+                    <ul class="hero-metadata" aria-label="Informations sur mon parcours">
+                        <li>Étudiant en informatique</li>
+                        <li class="hero-season">Saison 1</li>
+                        <li>En construction</li>
+                    </ul>
+                    <p class="hero-tagline">Chaque projet écrit la suite.</p>
+                    <p class="hero-synopsis">
+                        Étudiant en Bachelor informatique à Epitech, je construis mes compétences
+                        en développement à travers des projets concrets. Curieux des réseaux
+                        et de la cybersécurité, je cherche un stage pour apprendre au sein d’une équipe.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="hero-play" href="#presentation"><span aria-hidden="true">▶</span> Découvrir mon parcours</a>
+                        <a class="hero-more" href="assets/CV-Rayan-Ouakraf.pdf" download="CV-Rayan-Ouakraf.pdf"><span aria-hidden="true">↓</span> Télécharger mon CV</a>
+                    </div>
+                    <p class="hero-genres">Développement web <span aria-hidden="true">·</span> Cybersécurité <span aria-hidden="true">·</span> Intelligence artificielle</p>
+                </div>
+                <button id="teaser-toggle" class="teaser-background-toggle" type="button">Mettre le fond en pause</button>
+            </section>
+
+            <section class="content-section favorites"
+                     aria-labelledby="favorites-title">
+                <h2 id="favorites-title">Mes films préférés</h2>
+                <p>Choisis un film pour découvrir une partie de mon parcours.</p>
+
+                <div class="favorites-list">
+                    <a class="favorite-card" href="#presentation">
+                        <img src="images.jpeg" alt="" loading="lazy">
+                        <span class="favorite-info">
+                            <strong>Seven</strong>
+                            <span>À propos de moi →</span>
+                        </span>
+                    </a>
+
+                    <a class="favorite-card" href="#competences">
+                        <img src="images-2.jpeg" alt="" loading="lazy">
+                        <span class="favorite-info">
+                            <strong>City of God</strong>
+                            <span>Compétences clés →</span>
+                        </span>
+                    </a>
+
+                    <a class="favorite-card" href="#formations">
+                        <img src="images-1.jpeg" alt="" loading="lazy">
+                        <span class="favorite-info">
+                            <strong>The Dark Knight</strong>
+                            <span>Formations →</span>
+                        </span>
+                    </a>
+
+                    <a class="favorite-card" href="#projets">
+                        <img src="images-4.jpeg" alt="" loading="lazy">
+                        <span class="favorite-info">
+                            <strong>La Haine</strong>
+                            <span>Projets populaires →</span>
+                        </span>
+                    </a>
+
+                    <a class="favorite-card" href="#contact">
+                        <img src="images-3.jpeg" alt="" loading="lazy">
+                        <span class="favorite-info">
+                            <strong>Fight Club</strong>
+                            <span>Me contacter →</span>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="content-section" id="presentation"
+                     aria-labelledby="presentation-title">
+                <h2 id="presentation-title">À propos de moi</h2>
+
+                <div class="about-layout">
+                    <img
+                        class="about-photo"
+                        src="portrait.jpg"
+                        alt="Portrait de Rayan Ouakraf"
+                        width="240"
+                        height="300"
+                    >
+
+                    <div>
+                        <p>
+                            Je suis Rayan, étudiant en Bachelor informatique à Epitech, à Marseille.
+                            J’apprends à programmer en construisant : ce portfolio réunit mon goût
+                            pour le cinéma et mon envie de développer des interfaces qui me ressemblent.
+                        </p>
+                        <p>
+                            Mon stage d’observation au CPEM m’a permis de découvrir le quotidien
+                            d’une équipe informatique. Aujourd’hui, je souhaite aller plus loin :
+                            mettre mes connaissances en pratique, participer à des missions concrètes
+                            et progresser aux côtés de professionnels.
+                        </p>
+                        <ul class="about-facts">
+                            <li><strong>Mon approche</strong> Curiosité, travail en équipe et résolution de problèmes.</li>
+                            <li><strong>Autres bases</strong> Notions de Python et Java ; familiarité avec Windows, Linux et les outils bureautiques.</li>
+                        </ul>
+                        <a class="text-link" href="https://github.com/rayannnnn13">Découvrir mon GitHub ↗</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="experiences"
+                     aria-labelledby="experiences-title">
+                <div class="section-header">
+                    <h2 id="experiences-title">Expériences du moment</h2>
+                    <div class="carousel-controls">
+                        <button type="button" data-scroll="experiences-list"
+                                data-direction="-1"
+                                aria-label="Faire défiler les expériences à gauche">
+                            ‹
+                        </button>
+                        <button type="button" data-scroll="experiences-list"
+                                data-direction="1"
+                                aria-label="Faire défiler les expériences à droite">
+                            ›
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel" id="experiences-list"></div>
+            </section>
+
+            <section class="content-section" id="competences"
+                     aria-labelledby="competences-title">
+                <div class="section-header">
+                    <h2 id="competences-title">Compétences clés</h2>
+                    <div class="carousel-controls">
+                        <button type="button" data-scroll="skills-list"
+                                data-direction="-1"
+                                aria-label="Faire défiler les compétences à gauche">
+                            ‹
+                        </button>
+                        <button type="button" data-scroll="skills-list"
+                                data-direction="1"
+                                aria-label="Faire défiler les compétences à droite">
+                            ›
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel" id="skills-list"></div>
+            </section>
+
+            <section class="content-section" id="formations"
+                     aria-labelledby="formations-title">
+                <h2 id="formations-title">Formations</h2>
+                <p class="section-intro">Mon parcours, des premiers repères numériques à ma formation actuelle à Epitech.</p>
+                <div class="formation-timeline" id="formations-list"></div>
+            </section>
+
+            <section class="content-section" id="projets"
+                     aria-labelledby="projets-title">
+                <div class="section-header">
+                    <h2 id="projets-title">Projets populaires</h2>
+                    <div class="carousel-controls">
+                        <button type="button" data-scroll="projects-list"
+                                data-direction="-1"
+                                aria-label="Faire défiler les projets à gauche">
+                            ‹
+                        </button>
+                        <button type="button" data-scroll="projects-list"
+                                data-direction="1"
+                                aria-label="Faire défiler les projets à droite">
+                            ›
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel" id="projects-list"></div>
+            </section>
+
+            <section class="content-section" id="prochainement" aria-labelledby="upcoming-title">
+                <p class="eyebrow">Les prochains chapitres</p>
+                <h2 id="upcoming-title">Prochainement</h2>
+                <p class="section-intro">Mes apprentissages en cours et les pistes que j’aimerais explorer.</p>
+                <div class="carousel" id="upcoming-list"></div>
+            </section>
+
+            <section class="content-section contact-section" id="contact"
+                     aria-labelledby="contact-title">
+                <h2 id="contact-title">Me contacter</h2>
+                <p class="contact-lead">Une équipe à rejoindre, une mission à découvrir ?</p>
+                <p>Je recherche un stage pour mettre mes connaissances en pratique et continuer à apprendre au contact de professionnels.</p>
+                <p>
+                    Écris-moi à
+                    <a href="mailto:rayan.ouakraf@epitech.com">
+                        rayan.ouakraf@epitech.com
+                    </a>
+                    ou consulte
+                    <a href="https://github.com/rayannnnn13">mon GitHub</a>.
+                </p>
+                <p class="form-note">
+                    Ce formulaire est une démonstration : il affiche une confirmation
+                    sans envoyer d’email.
+                </p>
+
+                <form id="contact-form">
+                    <div class="form-field">
+                        <label for="name">Nom</label>
+                        <input id="name" name="name" type="text"
+                               autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Adresse email</label>
+                        <input id="email" name="email" type="email"
+                               autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"
+                                  rows="5" required></textarea>
+                    </div>
+
+                    <button class="primary-button" type="submit">
+                        Valider mon message
+                    </button>
+                </form>
+
+                <p id="contact-feedback" role="status"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Rayan Ouakraf</p>
+        </footer>
+    </div>
+
+    <dialog class="detail-dialog" id="project-dialog"
+            aria-labelledby="dialog-title">
+        <button class="dialog-close" id="close-dialog" type="button"
+                aria-label="Fermer le détail du projet">×</button>
+        <img id="dialog-image" class="dialog-preview" src="assets/portfolio-preview.svg" alt="" width="960" height="540" hidden>
+        <p class="eyebrow">Dans les coulisses du projet</p>
+        <h2 id="dialog-title">Détail du projet</h2>
+        <p id="dialog-description"></p>
+        <div id="dialog-details"></div>
+        <h3>Technologies utilisées</h3>
+        <ul id="dialog-technologies" class="technology-list"></ul>
+        <a id="dialog-link" href="#" hidden>Voir le projet ↗</a>
+    </dialog>
+
+</body>
+</html>
